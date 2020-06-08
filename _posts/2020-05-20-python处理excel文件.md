@@ -97,15 +97,19 @@ sht.range("A1").api.VerticalAlignment = -4107
 sht.range('C2').api.Borders(9).LineStyle = 1
 sht.range('C2').api.Borders(9).Weight = 3  # 设置边框粗细。
 
+
 # Borders(7) 左边框，LineStyle = 2 虚线。
+
 sht.range('C2').api.Borders(7).LineStyle = 2
 sht.range('C2').api.Borders(7).Weight = 3
 
 # Borders(8) 顶部框，LineStyle = 5 双点划线。
+
 sht.range('C2').api.Borders(8).LineStyle = 5
 sht.range('C2').api.Borders(8).Weight = 3
 
 # Borders(10) 右边框，LineStyle = 4 点划线。
+
 sht.range('C2').api.Borders(10).LineStyle = 4
 sht.range('C2').api.Borders(10).Weight = 3
 
