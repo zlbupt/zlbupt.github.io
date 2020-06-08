@@ -91,6 +91,24 @@ sht.range("A1").api.HorizontalAlignment = -4152
 sht.range("A1").api.VerticalAlignment = -4107
 # -4160：top , -4108 : center, -4107 : bottom
 
+# 设置边框
+
+# Borders(9) 底部边框，LineStyle = 1 直线。
+sht.range('C2').api.Borders(9).LineStyle = 1
+sht.range('C2').api.Borders(9).Weight = 3  # 设置边框粗细。
+
+# Borders(7) 左边框，LineStyle = 2 虚线。
+sht.range('C2').api.Borders(7).LineStyle = 2
+sht.range('C2').api.Borders(7).Weight = 3
+
+# Borders(8) 顶部框，LineStyle = 5 双点划线。
+sht.range('C2').api.Borders(8).LineStyle = 5
+sht.range('C2').api.Borders(8).Weight = 3
+
+# Borders(10) 右边框，LineStyle = 4 点划线。
+sht.range('C2').api.Borders(10).LineStyle = 4
+sht.range('C2').api.Borders(10).Weight = 3
+
 ### 其他具体操作可以参考官方文档或者VBA宏
 ```
 
@@ -200,6 +218,22 @@ alignment=Alignment(horizontal='general',
 number_format = 'General'
 protection = Protection(locked=True,
                          hidden=False)
+
+# 设置单元格格式
+
+side = Side(border_style='thin', color="fff0f0f0")
+border = Border(
+    left=excel_cell.border.left,
+    right=excel_cell.border.right,
+    top=excel_cell.border.top,
+    bottom=excel_cell.border.bottom
+)
+
+border.left = side
+border.right = side
+border.top = side
+border.bottom = side
+wb['A1'].border = border
 ```
 
 暂时先写这么多
