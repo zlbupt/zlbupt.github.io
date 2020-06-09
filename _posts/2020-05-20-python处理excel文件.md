@@ -58,6 +58,11 @@ info = sht.used_range
 nrows = info.last_cell.row
 ncolumns = info.last_cell.column
 
+# 获取当前单元格所在的行和列
+
+row = sht.range('A1').row
+col = sht.range('A2').column
+
 # 设置或者读取单元格的背景颜色, 但是只能使用rgb元组
 
 sht.range('A1').color = (0,0,0)
@@ -91,12 +96,8 @@ sht.range("A1").api.HorizontalAlignment = -4152
 sht.range("A1").api.VerticalAlignment = -4107
 # -4160：top , -4108 : center, -4107 : bottom
 
+
 # 设置边框
-
-# Borders(9) 底部边框，LineStyle = 1 直线。
-sht.range('C2').api.Borders(9).LineStyle = 1
-sht.range('C2').api.Borders(9).Weight = 3  # 设置边框粗细。
-
 
 # Borders(7) 左边框，LineStyle = 2 虚线。
 
@@ -107,6 +108,11 @@ sht.range('C2').api.Borders(7).Weight = 3
 
 sht.range('C2').api.Borders(8).LineStyle = 5
 sht.range('C2').api.Borders(8).Weight = 3
+
+# Borders(9) 底部边框，LineStyle = 1 直线。
+
+sht.range('C2').api.Borders(9).LineStyle = 1
+sht.range('C2').api.Borders(9).Weight = 3  # 设置边框粗细。
 
 # Borders(10) 右边框，LineStyle = 4 点划线。
 
