@@ -4,7 +4,7 @@ title:      在VBA中使用TCP或者UDP进行通信
 subtitle:   Excel 工具，在VBA中使用TCP或者UDP向别的进程发送数据。
 date:       2020-06-19
 author:     zl
-header-img: img/post-excel-1200x630-.jpg
+header-img: img/post-excel.jpg
 catalog: true
 tags:
     - VBA
