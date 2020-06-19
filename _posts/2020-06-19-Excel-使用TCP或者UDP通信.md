@@ -7,13 +7,13 @@ author:     zl
 header-img: img/post_excel_wise.webp
 catalog: true
 tags:
-	- VBA
-	- excel
-	- TCP
-	- UDP
+    - VBA
+    - excel
+    - TCP
+    - UDP
 ---
 > VBA中通信总结
-# VBA中使用tcp/udp总结
+#  VBA中使用tcp/udp总结
 
 ​	数次的使用winsock的失败，甚至让我对vba失去了信心。我想要VBA中使用tcp或者udp通信方式将excel中的数据传输到其他的进程，为了达到这个目的，我尝试过直接使用winsock，也尝试使用OSWINSCK，vbRichClient。前者也是在winsock上进行的封装，我也不知道后者是怎么做的，但是其参考资料特别少，而且往往不能使用。
 
